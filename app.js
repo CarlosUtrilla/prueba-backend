@@ -21,11 +21,7 @@ function generateProducts(count) {
 }
 
 app.get('/api/search', (req, res) => {
-    const query = req.query.q.toLowerCase();
-    const results = products.filter(product => 
-        product.nombre.toLowerCase().includes(query) || product.categoria.toLowerCase().includes(query)
-    );
-    res.json(results);
+   // Codigo
 });
 
 app.listen(PORT, () => {
